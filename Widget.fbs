@@ -1,0 +1,26 @@
+namespace widget;
+
+union Object {
+  A, B, C
+}
+
+table A {
+  a: int;
+  next: Object;
+}
+
+table B {
+  b: int;
+  next: Object;
+}
+
+table C {
+  c: int;
+  next: Object;
+}
+
+table Widget {
+  list: Object;
+}
+
+root_type Widget;
